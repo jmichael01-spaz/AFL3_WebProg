@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website – Photo Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#c1613a',
+            cream: '#faf3e8',
+            brown: '#3d2b1f',
+            sand: '#e2ceaa',
+          },
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            lato: ['Lato', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #faf3e8; }
+
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-lato">
+
+  <!-- NAVBAR -->
+  <header class="bg-terracotta px-6 py-3 flex items-center justify-between sticky top-0 z-50">
+    <div class="font-playfair font-bold text-cream text-xl md:text-2xl">My Personal Website</div>
+    <nav class="flex gap-5 md:gap-10">
+      <a href="index.html"   class="text-cream text-sm md:text-base">Home</a>
+      <a href="hobby.html"   class="text-cream text-sm md:text-base">Hobby</a>
+      <a href="gallery.html" class="text-cream text-sm md:text-base">Photo Gallery</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-1 max-w-5xl mx-auto w-full px-6 md:px-10 py-10">
+
+    <h1 class="font-playfair font-bold text-brown text-4xl md:text-5xl mb-10 reveal">
+      <em>Photo</em> <span class="text-terracotta italic">Gallery</span>
+    </h1>
+
+    <!-- Row 1 -->
+    <div class="flex flex-col sm:flex-row gap-6 mb-6 items-start">
+      <img src="Gallery1.jpeg" alt="Gallery photo" class="rounded-lg reveal object-cover" style="width:280px;height:240px;" />
+      <img src="Gallery2.png" alt="Gallery photo" class="sm:ml-auto rounded-lg reveal object-cover" style="width:200px;height:240px;" />
+    </div>
+
+    <!-- Row 2 -->
+    <div class="flex flex-col sm:flex-row gap-6 items-start flex-wrap">
+      <img src="Gallery3.png" alt="Gallery photo" class="rounded-lg reveal object-cover" style="width:230px;height:215px;" />
+      <img src="Gallery4.png" alt="Gallery photo" class="rounded-lg reveal object-cover" style="width:175px;height:215px;" />
+      <img src="Gallery5.png" alt="Gallery photo" class="rounded-lg reveal object-cover" style="width:215px;height:215px;" />
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-sand py-4 text-center bg-cream">
+    <p class="text-brown text-sm">© 2026 Personal Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

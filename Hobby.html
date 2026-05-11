@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website – Hobby</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#c1613a',
+            cream: '#faf3e8',
+            brown: '#3d2b1f',
+            sand: '#e2ceaa',
+          },
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            lato: ['Lato', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #faf3e8; }
+
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-lato">
+
+  <!-- NAVBAR -->
+  <header class="bg-terracotta px-6 py-3 flex items-center justify-between sticky top-0 z-50">
+    <div class="font-playfair font-bold text-cream text-xl md:text-2xl">My Personal Website</div>
+    <nav class="flex gap-5 md:gap-10">
+      <a href="index.html"   class="text-cream text-sm md:text-base">Home</a>
+      <a href="hobby.html"   class="text-cream text-sm md:text-base">Hobby</a>
+      <a href="gallery.html" class="text-cream text-sm md:text-base">Photo Gallery</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-1 max-w-3xl mx-auto w-full px-6 md:px-10 py-10">
+
+    <h1 class="font-playfair font-bold text-brown text-4xl md:text-5xl leading-tight mb-1 reveal">The Things</h1>
+    <h1 class="font-playfair font-bold text-brown text-4xl md:text-5xl leading-tight mb-2 reveal">
+      That Keep <span class="italic text-terracotta">Me Going</span>
+    </h1>
+    <p class="text-brown text-sm italic mb-12 reveal">Four hobbies. Very little in common. Yet somehow they all feel like home.</p>
+
+    <!-- 1. Gaming -->
+    <div class="mb-14 reveal">
+      <h2 class="font-playfair font-bold text-brown text-2xl mb-5">1. 🎮 Gaming</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-start">
+        <div class="flex-1">
+          <p class="font-playfair italic text-brown text-sm leading-relaxed mb-4">
+            Gaming has been a constant in my life for as long as I can remember. There's something uniquely satisfying about stepping into a world that plays by its own rules — where the problems are solvable, the stakes feel real, and the rewards are immediate. Whether it's an open-world RPG that swallows entire weekends, or a quick competitive match before dinner, games are my way of switching off the noise.
+          </p>
+          <p class="font-playfair italic text-brown text-sm leading-relaxed">
+            As an IT student, I've started seeing games differently too. The logic behind game mechanics, the architecture of game worlds, the way user interfaces guide you without you ever noticing — it's all quietly teaching me things I'll use in my degree. What started as a hobby is slowly becoming a lens.
+          </p>
+        </div>
+        <div class="flex flex-row md:flex-col gap-3 flex-shrink-0">
+          <img src="clash.jpg" alt="Gaming" class="rounded-xl object-cover" style="width:110px;height:110px;" />
+          <img src="valo.png" alt="Gaming" class="rounded-xl object-cover" style="width:110px;height:110px;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Sleeping -->
+    <div class="mb-14 reveal">
+      <h2 class="font-playfair font-bold text-brown text-2xl mb-5">2. 😴 Sleeping</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-start">
+        <div class="flex-1">
+          <p class="font-playfair italic text-brown text-sm leading-relaxed mb-4">
+            Yes, sleeping is a hobby. And I will defend this with my whole chest. In a world that glorifies hustle and early mornings, choosing to rest — deliberately, unapologetically — is practically an act of rebellion. Sleep is where my brain reorganises itself, where ideas that were tangled in the afternoon somehow make perfect sense by morning.
+          </p>
+          <p class="font-playfair italic text-brown text-sm leading-relaxed">
+            I've come to treat sleep less like a necessity and more like a ritual. A good nap can reset a bad day. A long Sunday sleep-in is its own kind of luxury. There is absolutely nothing wrong with being very, very good at resting.
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <img src="kirby.png" alt="Sleeping" class="rounded-xl object-cover" style="width:110px;height:110px;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Geography -->
+    <div class="mb-14 reveal">
+      <h2 class="font-playfair font-bold text-brown text-2xl mb-5">3. 🌍 Geography</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-start">
+        <div class="flex-1">
+          <p class="font-playfair italic text-brown text-sm leading-relaxed mb-4">
+            I am fascinated by the world — not just in a vague, abstract sense, but concretely: the shapes of countries, the reasons borders exist where they do, why rivers determine where cities grow, and how a mountain range can split an entire culture in two. Geography, to me, is really just the story of everything, told through land.
+          </p>
+          <p class="font-playfair italic text-brown text-sm leading-relaxed">
+            I'll happily lose an hour reading about landlocked countries, debating which ocean borders are actually contested, or tracing the path of a river I've never heard of. It's the kind of curiosity that doesn't have a practical purpose — and that's exactly why I love it. The world is enormous and strange and I want to know all of it.
+          </p>
+        </div>
+        <div class="flex flex-row md:flex-col gap-3 flex-shrink-0">
+          <img src="geoguessr.png" alt="Geography" class="rounded-lg object-contain" style="width:110px;height:44px;" />
+          <img src="seterra.png" alt="Geography" class="rounded-xl object-cover" style="width:110px;height:110px;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Embroidery -->
+    <div class="mb-14 reveal">
+      <h2 class="font-playfair font-bold text-brown text-2xl mb-5">4. 🧵 Embroidery</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-start">
+        <div class="flex-1">
+          <p class="font-playfair italic text-brown text-sm leading-relaxed mb-4">
+            Embroidery is the hobby that surprises people most when I mention it — but it makes perfect sense to me. In a life spent looking at screens, there is something deeply grounding about working with your hands. Every stitch is a small, deliberate decision. There's no ctrl+Z. You commit to the thread, and you make it work.
+          </p>
+          <p class="font-playfair italic text-brown text-sm leading-relaxed">
+            It's also meditative in a way that nothing else quite matches. The repetition of a stitch, the slow emergence of a pattern, the satisfaction of a finished piece — it's the opposite of instant gratification, and that's the whole point. Embroidery has taught me patience in a way that no app or course ever could.
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <img src="cross.png" alt="Embroidery" class="rounded-xl object-cover" style="width:110px;height:110px;" />
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-sand py-4 text-center bg-cream">
+    <p class="text-brown text-sm">© 2026 Personal Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website – Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#c1613a',
+            cream: '#faf3e8',
+            brown: '#3d2b1f',
+            sand: '#e2ceaa',
+          },
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            lato: ['Lato', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #faf3e8; }
+
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-lato">
+
+  <!-- NAVBAR -->
+  <header class="bg-terracotta px-6 py-3 flex items-center justify-between sticky top-0 z-50">
+    <div class="font-playfair font-bold text-cream text-xl md:text-2xl">My Personal Website</div>
+    <nav class="flex gap-5 md:gap-10">
+      <a href="index.html"   class="text-cream text-sm md:text-base">Home</a>
+      <a href="hobby.html"   class="text-cream text-sm md:text-base">Hobby</a>
+      <a href="gallery.html" class="text-cream text-sm md:text-base">Photo Gallery</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex flex-col md:flex-row flex-1">
+
+    <!-- Left Sidebar -->
+    <aside class="w-full md:w-2/5 px-8 py-10 border-b md:border-b-0 md:border-r border-sand flex flex-col items-start">
+      <img src="photo_for_home.png" alt="Profile photo" class="rounded-full mb-6 reveal object-cover" style="width:160px;height:160px;" />
+
+      <h1 class="font-playfair font-bold text-brown text-3xl md:text-4xl leading-snug mb-1 reveal">Hello, My Name is</h1>
+      <h1 class="font-playfair font-bold italic text-terracotta text-3xl md:text-4xl mb-4 reveal">John!</h1>
+      <p class="text-brown text-sm italic leading-relaxed mb-8 max-w-xs reveal">
+        An 18-year-old who codes by day, games by night, and embroiders in between.
+      </p>
+
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3 reveal">
+          <span class="bg-terracotta rounded-lg w-10 h-10 flex items-center justify-center text-lg">🎓</span>
+          <span class="text-terracotta font-semibold text-sm">Ciputra University</span>
+        </div>
+        <div class="flex items-center gap-3 reveal">
+          <span class="bg-terracotta rounded-lg w-10 h-10 flex items-center justify-center text-lg">💻</span>
+          <span class="text-terracotta font-semibold text-sm">Informatika</span>
+        </div>
+        <div class="flex items-center gap-3 reveal">
+          <span class="bg-terracotta rounded-lg w-10 h-10 flex items-center justify-center text-lg">🎂</span>
+          <span class="text-terracotta font-semibold text-sm">18 Years Old</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Content -->
+    <section class="flex-1 px-8 md:px-12 py-10 flex flex-col gap-8">
+
+      <div class="reveal">
+        <h2 class="font-playfair text-brown text-2xl mb-4">About Me</h2>
+        <p class="font-playfair italic text-brown text-base leading-relaxed">
+          I'm an IT student at Ciputra University with a quiet curiosity that stretches across continents, code, and craft.
+          I find beauty in both algorithms and atlases — and probably know the capitals of more countries than most of my classmates.
+          When I'm not studying or gaming, you'll find me with a needle in hand, turning thread into tiny worlds.
+        </p>
+        <hr class="mt-8 border-sand" />
+      </div>
+
+      <div>
+        <h2 class="font-playfair text-brown text-2xl mb-6 reveal">Things I Love</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="rounded-2xl p-5 card reveal" style="background-color:#cc7060;">
+            <div class="text-2xl mb-2">🎮</div>
+            <div class="font-playfair font-bold text-brown text-lg">Gaming</div>
+            <div class="text-terracotta font-semibold text-sm mt-1">Chronically Online</div>
+          </div>
+
+          <div class="rounded-2xl p-5 border border-sand card reveal" style="background-color:#e8d5b0;">
+            <div class="text-2xl mb-2">😴</div>
+            <div class="font-playfair font-bold text-brown text-lg">Sleeping</div>
+            <div class="text-terracotta font-semibold text-sm mt-1">Always Tired 🤣</div>
+          </div>
+
+          <div class="rounded-2xl p-5 border border-sand card reveal" style="background-color:#faf3e8;">
+            <div class="text-2xl mb-2">🌍</div>
+            <div class="font-playfair font-bold text-brown text-lg">Geography</div>
+            <div class="text-brown font-semibold text-sm mt-1">Capitals On Capitals</div>
+          </div>
+
+          <div class="rounded-2xl p-5 card reveal" style="background-color:#f5e6ef;">
+            <div class="text-2xl mb-2">🧵</div>
+            <div class="font-playfair font-bold text-brown text-lg">Embroidery</div>
+            <div class="text-brown font-semibold text-sm mt-1">Crosses and Coat of Arms</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-sand py-4 text-center bg-cream">
+    <p class="text-brown text-sm">© 2026 Personal Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
